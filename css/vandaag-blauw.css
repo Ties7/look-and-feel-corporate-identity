@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+section {
+    background-color: #111111;
+    color: white;
+
+    width: 24.375rem;
+    height: 7.375rem;
+}
+
+section h1 {
+    margin: 0;
+}
