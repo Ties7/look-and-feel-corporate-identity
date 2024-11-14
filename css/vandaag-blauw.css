@@ -6,10 +6,27 @@ section {
     background-color: #111111;
     color: white;
 
-    width: 24.375rem;
+    width: 100vw;
     height: 7.375rem;
+
+    position: absolute;
 }
+
+section div {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 section h1 {
     margin: 0;
+    font-size: 1.75rem;
+}
+
+section p {
+    font-size: 0.625rem;
+    font-weight: 400;
+
+    position: absolute;
 }
