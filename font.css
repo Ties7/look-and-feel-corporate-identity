@@ -1,0 +1,14 @@
+p {
+
+    /* Ik kwam er achter dat je de fontsize moet veranderen om de 10-12 woorden per regel te krijgen inplaats van met de width the klooien, maar ik snap het idee van verschillende eenheden :) */
+
+    /* width: 28em; */
+    /* width: 12cm; */
+    /* width: 120mm; */
+    /* width: 450px; */
+    /* width: 60ch; */
+    /* width: 30vw; */
+    /* width: 30cqw; */
+    /* width: 30dvw; */
+    /* width: 30vmax; */
+}
