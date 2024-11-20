@@ -85,9 +85,20 @@ header p {
 
 /* oefeningen */
 .oefeningen {
-    /* position: absolute; */
+    position: relative;
     margin-top: 3em;
     height: 100vh;
+    width: 100vw;
     border-radius: 2em;
     background-color: #1D1D1D;
+}
+
+main {
+    position: absolute;
+    height: 18em;
+    left: 1.5em;
+    right: 1.5em;
+    top: 1.5em;
+    border-radius: 2em;
+    background-color: #111111;
 }
