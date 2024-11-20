@@ -1,8 +1,9 @@
+html { overflow-y: scroll; overflow-x:hidden; }
+
 body {
     margin: 0;
     box-sizing: border-box;
-
-    overflow: scroll;
+    overflow: visible
 }
 
 /* bovenste gedeelte */
@@ -89,16 +90,19 @@ header p {
     margin-top: 3em;
     height: 100vh;
     width: 100vw;
-    border-radius: 2em;
+
     background-color: #1D1D1D;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
     position: absolute;
-    height: 18em;
-    left: 1.5em;
-    right: 1.5em;
-    top: 1.5em;
-    border-radius: 2em;
+    margin-left: 2em;
+    height: 100em;
+    margin: 2em;
+
     background-color: #111111;
 }
