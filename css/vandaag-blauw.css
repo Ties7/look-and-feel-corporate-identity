@@ -12,6 +12,10 @@ body {
 
 /* bovenste gedeelte */
 section {
+    position: fixed;
+    top: 0; /* Position it at the very top of the page */
+    z-index: 10;
+
     background-color: #111111;
     color: white;
 
@@ -67,6 +71,7 @@ section p {
 /* middelste gedeelte */
 header {
     position: relative;
+    top: 5rem;
 
     display: flex;
     flex-direction: column;
@@ -76,6 +81,7 @@ header {
 .iconblauw {
     width: 15em;
     margin-top: 2em;
+
 }
 
 header h2 {
@@ -84,13 +90,37 @@ header h2 {
 
 header p {
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bluemesh1 {
+    position: absolute;
+
+    scale: 80%;
+    left: -10em;
+    filter: blur(5rem);
+    opacity: 60%;
+    z-index: -1;
+}
+
+.bluemesh2 {
+    position: absolute;
+
+    scale: 80%;
+    right: -10em;
+    filter: blur(5rem);
+    opacity: 60%;
+    z-index: -1;
 }
 
 /* oefeningen */
 .oefeningen {
     height: 100vh;
     padding: 1em;
-    margin-top: 2em;
+    margin-top: 7em;
 
     background-color: #1D1D1D;
 
