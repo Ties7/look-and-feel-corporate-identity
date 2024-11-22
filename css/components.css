@@ -1,21 +1,126 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+/* Global styles for multiple users */
 
+/* Font-Faces */
 @font-face {
-    font-family: 'Calvino Grande';
-    src: url(fonts/Calvino-Grande-Variable-trial.ttf);   
-}
-
-body {
-    font-family: Figtree;
-    background-color: #111;
-    color: white;
-
+    font-family: "Calvino Grande";
+    font-weight: 800;
+    src: url(../assets/fonts/Calvino-Extrabold-trial.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Figtree";
+    font-weight: 300;
+    src: url(/assets/fonts/figtree-300-normal.woff) format("woff");
+  }
+  
+  @font-face {
+    font-family: "Figtree";
+    font-weight: 400;
+    src: url(/assets/fonts/figtree-400-normal.woff) format("woff");
+  }
+  
+  @font-face {
+    font-family: "Figtree";
+    font-weight: 500;
+    src: url(/assets/fonts/figtree-500-normal.woff) format("woff");
+  }
+  
+  @font-face {
+    font-family: "Figtree";
+    font-weight: 700;
+    src: url(/assets/fonts/figtree-700-normal.woff) format("woff");
+  }
+  
+  /* Reset Box Sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  
+  /* Color Variables */
+  body {
+    --bg-primary: #111111;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a6a6a6;
+  
+    /* Button Colors */
+    --btn-default: #f5f5f5;
+    --btn-rouwtaak-1: #64aac7;
+    --btn-rouwtaak-2: #984a4a;
+    --btn-rouwtaak-3: #6e9158;
+    --btn-rouwtaak-4: #7c6097;
+  
+    /* Pill button*/
+    --btn-border: 1px solid #f5f5f5;
+    --pill-btn-border-radius: 5rem;
+    --pill-btn-padding: 0.5rem;
+    --pill-btn-width: 5rem;
+  
+    /* Typography Settings */
+    --ff-calvino: "Calvino Grande", serif;
+    --ff-figtree: "Figtree", sans-serif;
+  
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold-normal: 700;
+    --fw-bold-heading: 800;
+  
+    /* Inactive/Completed Colors */
+    --inactive-color: #4d4d4d;
+    --completed-color: #f5f5f5;
+  
+    --completed-rouwtaak-1: #64aac7;
+    --completed-rouwtaak-2: #984a4a;
+    --completed-rouwtaak-3: #6e9158;
+    --completed-rouwtaak-4: #7c6097;
+  }
+  
+  html {
+    font-family: var(--ff-figtree), sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     margin: 0;
-
-    overflow: hidden;
-}
-
-.grijs {
-    color: #A6A6A6;
-}
+    padding: 0;
+  }
+  
+  /* Heading and Text Styles */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-calvino), serif;
+    font-weight: var(--fw-bold-heading);
+  }
+  
+  p,
+  span,
+  li {
+    font-family: var(--ff-figtree), sans-serif;
+    font-weight: var(--fw-regular);
+  }
+  
+  figcaption {
+    font-family: var(--ff-figtree);
+    font-style: italic;
+  }
+  
+  code {
+    font-family: var(--ff-figtree);
+  }
+  
+  
+  .btn-rouwtaak-1,
+  .btn-rouwtaak-2,
+  .btn-rouwtaak-3,
+  .btn-rouwtaak-4 {
+      font-size: 0.9rem;
+      width: var(--pill-btn-width);
+      color: var(--text-primary);
+      padding: var(--pill-btn-padding);
+      border-radius: var(--pill-btn-border-radius);
+      border: var(--btn-border);
+  }
