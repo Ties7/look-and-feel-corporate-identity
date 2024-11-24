@@ -16,11 +16,9 @@ body {
 /* bovenste gedeelte */
 section {
     position: fixed;
-    top: 0; /* Position it at the very top of the page */
+    top: 0;
     z-index: 10;
-
-    background-color: #111111;
-
+    background-color: var(--bg-primary);
     width: 100vw;
     height: 5rem;
 }
@@ -30,16 +28,12 @@ section {
     left: 50%;
     top: 20%;
     transform: translateX(-50%);
-
     width: 90vw;
     height: 5rem;
-
-    overflow-x: hidden;
 }
 
 section h1 {
     font-family: calvino grande;
-    
     position: absolute;
     font-size: 1.5rem;
     width: auto;
@@ -47,12 +41,11 @@ section h1 {
 }
 
 section p {
+    font-family: var(--ff-figtree);
     position: absolute;
     left: 24em;
     width: auto;
-
     margin-top: 3.2em;
-
     font-size: 0.625rem;
     font-weight: 400;
 }
@@ -60,7 +53,6 @@ section p {
 .vector {
     position: absolute;
     right: 0;
-
     margin-top: 0.8em;
     margin-bottom: 0;
 }
@@ -74,7 +66,6 @@ section p {
 header {
     position: relative;
     top: 5rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,15 +83,15 @@ header h2 {
 
 header p {
     margin: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--ff-figtree);
+    color: var(--text-secondary);
 }
 
 .bluemesh1 {
     position: absolute;
-
     scale: 80%;
     left: -10em;
     filter: blur(5rem);
@@ -120,23 +111,59 @@ header p {
 
 /* oefeningen */
 .oefeningen {
-    height: auto;
+    height: 100vh;
     padding: 1em;
     margin-top: 7em;
-
     background-color: #1D1D1D;
-
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 
     border-radius: 2em;
 }
 
 .card {
-    height: 12em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    background-color: #111111;
-    
+    background-color: var(--bg-primary);
     border-radius: 1em;
+    height: 20em;
+    max-width: 28em;
+}
+
+.bluewaves {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    width: 100%;
+    height: 50%;
+}
+
+.startoefening {
+    position: absolute;
+
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    padding: var(--pill-btn-padding);
+    border-radius: var(--pill-btn-border-radius);
+    border: var(--btn-border);
+    background-color: var(--btn-rouwtaak-1);
+
+    right: 2em;
+    top: 10em;
+}
+
+.lezen {
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-figtree);
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.card h2 {
+    font-weight: var(--fw-bold-heading);
+    font-family: var(--ff-calvino);
+    font-size: 24px;
+    margin-left: 20px;
 }
