@@ -5,7 +5,8 @@ body {
     box-sizing: border-box;
 
     background-color: var(--bg-primary);
-    color: var(--text-primary)
+    color: var(--text-primary);
+    overflow: hidden;
 }
 
 /* hide scrollbar */
@@ -142,16 +143,15 @@ header p {
 
 .startoefening {
     position: absolute;
-
+    right: 2em;
+    top: 10em;
     font-size: 0.9rem;
     color: var(--text-primary);
     padding: var(--pill-btn-padding);
     border-radius: var(--pill-btn-border-radius);
     border: var(--btn-border);
     background-color: var(--btn-rouwtaak-1);
-
-    right: 2em;
-    top: 10em;
+    text-decoration: none;
 }
 
 .lezen {
@@ -159,6 +159,7 @@ header p {
     font-family: var(--ff-figtree);
     font-size: 16px;
     margin-left: 20px;
+    margin-bottom: 0.5em;
 }
 
 .card h2 {
@@ -166,4 +167,17 @@ header p {
     font-family: var(--ff-calvino);
     font-size: 24px;
     margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.communitydrops {
+    padding: 3px 50px;
+    font-family: var(--ff-figtree);
+    border: 1px solid var(--inactive-color);
+    border-radius: var(--pill-btn-border-radius);
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-left: 20px;
+    text-decoration: none;
 }
