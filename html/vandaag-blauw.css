@@ -217,6 +217,9 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+
+    font-family: var(--ff-figtree);
+    font-size: 13px;
 }
 
 .vandaag {
@@ -225,8 +228,9 @@ nav {
     align-items: center;
 }
 
-.vandaag p {
+.vandaag a {
     margin: 0.5em;
+
 }
 
 .praten {
@@ -235,8 +239,9 @@ nav {
     align-items: center;
 }
 
-.praten p {
+.praten a {
     margin: 0.5em;
+    color: var(--text-secondary);
 }
 
 .drops {
@@ -245,8 +250,9 @@ nav {
     align-items: center;
 }
 
-.drops p {
+.drops a {
     margin: 0.5em;
+    color: var(--text-secondary);
 }
 
 .profiel {
@@ -255,6 +261,7 @@ nav {
     align-items: center;
 }
 
-.profiel p {
+.profiel a {
     margin: 0.5em;
+        color: var(--text-secondary);
 }
