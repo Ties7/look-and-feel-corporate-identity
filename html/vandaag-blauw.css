@@ -116,10 +116,6 @@ header p {
     padding: 1em;
     margin-top: 7em;
     background-color: #1D1D1D;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
     border-radius: 2em;
 }
 
@@ -180,4 +176,68 @@ header p {
     color: var(--text-secondary);
     margin-left: 20px;
     text-decoration: none;
+}
+
+/* nav */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100vw;
+    height: 5em;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8vw;
+}
+
+.vandaag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vandaag p {
+    margin: 0.5em;
+}
+
+.praten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.praten p {
+    margin: 0.5em;
+}
+
+.drops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drops p {
+    margin: 0.5em;
+}
+
+.profiel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profiel p {
+    margin: 0.5em;
 }
