@@ -5,6 +5,6 @@ console.log(document.querySelector("#test"));
 
 document.querySelector("#test").addEventListener("click", function() {
     console.log(" tetsbenejd");
-    document.querySelector('.menu').classList.toggle("hoogte");
+    document.querySelector('.menu').classList.toggle("open");
 
 });
