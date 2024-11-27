@@ -71,7 +71,6 @@ section p {
 .menu {
     background-color: var(--bg-primary);
     position: fixed;
-    /* top: 5rem; */
     top: -11em;
     height: 11em;   
     width: 100vw; 
@@ -85,6 +84,10 @@ section p {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+}
+
+.hoogte {
+    top: 5rem;
 }
 
 .aanvaarden {
